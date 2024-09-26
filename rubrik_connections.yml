@@ -5,10 +5,10 @@
   tasks:
       - name: To fetch the credential and get the data
         set_fact:
-            account_name: "{{ lookup('env', 'rb_service_account_name') }}"
-            URI: "{{ lookup('env', 'rb_acces_token_uri') }}"
-            client_id: "{{ lookup('env', 'rb_client_id') }}"
-            rb_client_secret: "{{ lookup('env', 'rb_client_secret') }}"
+            account_name: "{{ lookup('env', 'rsc_service_account_name') }}"
+            URI: "{{ lookup('env', 'rsc_acces_token_uri') }}"
+            client_id: "{{ lookup('env', 'rsc_client_id') }}"
+            rb_client_secret: "{{ lookup('env', 'rsc_client_secret') }}"
         no_log: true
 
       - name: To print
