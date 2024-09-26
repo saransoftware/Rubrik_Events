@@ -1,6 +1,6 @@
 ---
 - name: Execute PowerShell Script
-  hosts: ansible-lab # Change this to your target host
+  hosts: all # Change this to your target host
   become: true
   gather_facts: false
   tasks:
